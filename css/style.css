@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      margin: 0;
+      font-family: arial;
+      font-size: 14px;
+      background: #F7F4F0;
+    }
+  
+  .navigate {
+      margin: 0 auto;
+    }
+  
+    header {
+      background:pink;
+    }
+    
+    header::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    
+    nav {
+      float: right;
+    }
+    
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    nav li {
+      display: inline-block;
+      margin: 0 60px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      
+      position: relative;
+    }
+    
+    nav a {
+      color: white;
+      font-size: 18px;
+      font-family: arial;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    
+    nav a:hover {
+      color: #DB7093;
+    }
+  #panel {
+    margin: 100px;
+    padding: 20px;
+    border: 3px solid pink;
+    width:600px;
+    text-align:center;
+    font-family:arial;
+    color:#696969;
+    font-size:18px;
+  }
+  
+  .bottom {
+    position: fixed;
+    bottom: 0;
+  }
+  
+  pre {
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  button {
+    background-color: pink;
+    border: solid 1px pink;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 18px;
+    radius: 14px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+  }
+  
+  .resumebutton{
+    text-align:center;
+    margin-top:15px;
+  }
+  
+  .left {
+    float:left;
+    width:40%;
+  }
+  
+  .left img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+  }
+  
+  .right {
+    float:right;
+    width:60%;
+    padding:15px;
+    margin-top:7px;
+    text-align:center;
+  }
+  
+   h {
+    display: inline-block;
+    font-family: Arial;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  
+  p {
+    display: inline-block;
+    color: #696969;
+    font-family: Arial;
+    fontcolor: black;
+    font-size: 18px;
+    font-weight:300;
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: arial;
+    font-size: 30px;
+    
+  }
+  .mememe {
+    float: left;
+    width: 50%;
+    height: 400px;
+    display: inline-block;
+    background-color: white;
+  }
+
+  .container {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .chart {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .chart figcaption {
+    padding: 50px 25px;
+    width: 100px;
+    height: 50px;
+    border: 20px solid #f0f0f0;
+    border-radius: 100px;
+    line-height: 50px;
+  }
+  
+  
+  .DESIGN {
+    top: 50px;
+    left: 45px;
+  }
+  
+  
+  .SKETCHING {
+    max-width: 90px;
+    max-height: 90px;
+    top: 45px;
+    left: 45px;
+  }
+  
+  .CODING {
+    width: 200px;
+    height: 200px;
+    top: 45px;
+    left: 45px;
+  }
+  
+  
+  .chart svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .outer {
+    fill: transparent;
+    stroke: #333;
+    stroke-width: 20;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+    
+    -moz-transform: rotate(-89deg) translateX(-190px);
+  }
+  
+  .chart:hover .outer {
+    stroke-dashoffset: 534 !important;
+    -webkit-animation-play-state: paused;
+  }
+  
+  .chart[data-percent='100'] .outer {
+    stroke-dashoffset: 0;
+    -webkit-animation: show100 2s;
+    animation: show100 2s;
+  }
+  
+  .chart[data-percent='75'] .outer {
+    stroke-dashoffset: 133;
+    -webkit-animation: show75 2s;
+    animation: show75 2s;
+  }
+  
+  .chart[data-percent='50'] .outer {
+    stroke-dashoffset: 267;
+    -webkit-animation: show50 2s;
+    animation: show50 2s;
+  }
+  
+  .chart[data-percent='25'] .outer {
+    stroke-dashoffset: 401;
+    -webkit-animation: show25 2s;
+    animation: show25 2s;
+  }
+  
